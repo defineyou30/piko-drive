@@ -1,0 +1,31 @@
+10-24 03:02:15.978 I/[GAAS]OnDeviceTtsStreamBinder( 3425): [binder:3425_9]stop(com.pikodrive.probe)
+10-24 03:02:15.978 I/[GAAS]a ( 3425): [DefaultDispatcher-worker-1](jobId=14) onDeviceTtsPlayer(com.pikodrive.probe:ondevice) - fadeout
+10-24 03:02:16.179 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-2](jobId=14) onDeviceTtsPlayer(com.pikodrive.probe:ondevice) - stopped
+10-24 03:02:16.197 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-3](jobId=14) onDeviceTtsPlayer(com.pikodrive.probe:ondevice) - complete
+10-24 03:02:16.441 I/PIKO_EVIDENCE(21741): session start caps=VehicleCapabilities(speed=true, gear=true, uxRestriction=true) source=pleos
+10-24 03:02:16.448 I/PIKO_EVIDENCE(21741): mode BOOTING
+10-24 03:02:16.449 I/PIKO_EVIDENCE(21741): expression CALM
+10-24 03:02:16.449 I/PIKO_EVIDENCE(21741): growth SPARK px=1
+10-24 03:02:16.629 I/PIKO_EVIDENCE(21741): gear source = Pleos Vehicle SDK
+10-24 03:02:16.904 I/PIKO_EVIDENCE(21741): mode PARKED
+10-24 03:02:23.497 I/PIKO_EVIDENCE(21741): mode DRIVING
+10-24 03:02:23.497 I/PIKO_EVIDENCE(21741): event Departed(timestampMs=1632033)
+10-24 03:02:24.840 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-2](jobId=10) onDeviceTtsPlayer(com.pikodrive:ondevice) - complete
+10-24 03:02:24.840 I/PIKO_EVIDENCE(21741): speech SPOKEN GREETING "출발! 같이 가자." at=1633376
+10-24 03:02:36.521 I/PIKO_EVIDENCE(21741): event HardBrake(timestampMs=1645056, kmhPerSec=-18.484287)
+10-24 03:02:39.021 I/PIKO_EVIDENCE(21741): expression SURPRISED
+10-24 03:02:40.196 I/[GAAS]OnDeviceTtsStreamBinder( 3425): [binder:3425_5]stop(com.pikodrive)
+10-24 03:02:40.197 I/PIKO_EVIDENCE(21741): mode REVERSING
+10-24 03:02:40.197 I/PIKO_EVIDENCE(21741): speech INTERRUPTED STARTLE "앗, 깜짝 놀랐어!" at=1648731
+10-24 03:02:40.197 I/PIKO_EVIDENCE(21741): event Reversing(timestampMs=1648729)
+10-24 03:02:40.198 I/[GAAS]OnDeviceTtsStreamBinder( 3425): [binder:3425_5]stop(com.pikodrive)
+10-24 03:02:40.200 I/[GAAS]a ( 3425): [DefaultDispatcher-worker-1](jobId=11) onDeviceTtsPlayer(com.pikodrive:ondevice) - fadeout
+10-24 03:02:40.401 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-3](jobId=11) onDeviceTtsPlayer(com.pikodrive:ondevice) - stopped
+10-24 03:02:40.408 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-3](jobId=11) onDeviceTtsPlayer(com.pikodrive:ondevice) - complete
+10-24 03:02:42.975 I/PIKO_EVIDENCE(21741): mode DRIVING
+10-24 03:02:42.982 I/PIKO_EVIDENCE(21741): mode PARKED
+10-24 03:02:46.064 I/PIKO_EVIDENCE(21741): event Parked(timestampMs=1654600)
+10-24 03:02:46.065 I/PIKO_EVIDENCE(21741): expression HAPPY
+10-24 03:02:46.065 I/PIKO_EVIDENCE(21741): trip 22s comfort=12s startled=1 +px=0 stage=SPARK→SPARK
+10-24 03:02:47.823 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-3](jobId=16) onDeviceTtsPlayer(com.pikodrive:ondevice) - complete
+10-24 03:02:47.823 I/PIKO_EVIDENCE(21741): speech SPOKEN ARRIVAL "도착! 함께해서 좋았어." at=1656359

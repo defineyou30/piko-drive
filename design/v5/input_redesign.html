@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Input Redesign</title>
+<style>
+:root{--bg:#0c0c0c;--panel:#121212;--card:#1c1c1c;--c7:#2a2a2a;--line:#3d3d3d;--fg:#f4efe6;--gray:#b4aca2;--mute:#6f675f;--amber:#ffb547;--alert:#ff7a59}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Pretendard","Apple SD Gothic Neo",sans-serif;width:1920px;padding:40px}
+h1{font-size:28px;margin:0 0 6px}.sub{color:var(--gray);font-size:16px;margin-bottom:26px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.screen{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px 30px;display:flex;flex-direction:column;gap:18px}
+.hdr{display:flex;align-items:center;justify-content:space-between}
+.hdr .t{font-size:24px;font-weight:700}.hdr .back{color:var(--gray);font-size:16px}
+.summary{background:var(--card);border-radius:14px;padding:18px 20px;font-size:22px;line-height:1.45}
+.summary b{color:var(--amber)}
+.summary .s{display:block;font-size:14px;color:var(--gray);margin-top:6px}
+.label{font-size:14px;color:var(--gray);margin-bottom:8px;letter-spacing:.02em}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{height:52px;padding:0 18px;border:1.5px solid var(--line);border-radius:26px;display:flex;align-items:center;font-size:17px;color:var(--fg);background:transparent}
+.chip.on{background:var(--fg);color:#0c0c0c;border-color:var(--fg);font-weight:600}
+.chip.add{color:var(--gray);border-style:dashed}
+.chip.sm{height:46px;min-width:58px;justify-content:center;padding:0 12px}
+.kid{display:flex;gap:10px}
+.kid .k{flex:1;height:64px;border:1.5px solid var(--line);border-radius:12px;display:flex;align-items:center;gap:12px;padding:0 14px;font-size:18px}
+.kid .k.on{border-color:var(--amber);background:#2a2216}
+.dot{width:28px;height:28px;border-radius:50%;background:#e9e4dc;display:flex;align-items:center;justify-content:center;font-size:12px;color:#111;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.grid .chip{justify-content:center;padding:0}
+.mins{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:6px}
+.mins .chip{justify-content:center;padding:0}
+.foot{display:flex;gap:12px;margin-top:6px}
+.btn{height:64px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;padding:0 28px}
+.btn.p{background:var(--amber);color:#111;flex:1}.btn.s{background:var(--c7);color:var(--fg);border:1.5px solid var(--line)}
+.trig{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.trig .tc{height:84px;border:1.5px solid var(--line);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:16px}
+.trig .tc.on{border-color:var(--amber);background:#2a2216}
+.trig .ic{font-size:22px}
+.note{grid-column:1/-1;background:var(--card);border-radius:14px;padding:18px 22px;font-size:16px;line-height:1.6;color:var(--gray)}
+.note b{color:var(--fg)}
+.tag{display:inline-block;font-size:12px;color:var(--amber);border:1px solid var(--amber);border-radius:4px;padding:1px 6px;margin-left:6px}
+</style></head><body>
+<h1>입력 화면 개선안 — 고르면 끝나는 입력</h1>
+<div class="sub">키보드 입력을 최소화: 자주 쓰는 값은 칩으로 고르고, 맨 위 문장으로 "무엇이 저장되는지" 바로 확인. 저장 전까지는 초안.</div>
+<div class="row">
+
+<!-- 일정 -->
+<div class="screen">
+  <div class="hdr"><div class="t">새 일정</div><div class="back">취소</div></div>
+  <div class="summary">매주 <b>월·수</b> <b>15:40</b>, <b>지우 태권도</b><br>준비물 <b>도복, 띠</b> · <b>15분 전</b>에 알려 드려요<span class="s">아래에서 고른 내용이 이 문장으로 바로 바뀌어요</span></div>
+  <div><div class="label">누구</div>
+    <div class="kid"><div class="k on"><div class="dot">지</div>지우 · 초등</div><div class="k"><div class="dot">콩</div>콩이 · 유치원</div><div class="k">둘 다</div></div></div>
+  <div><div class="label">무엇 <span class="tag">자주 쓰는 일정</span></div>
+    <div class="chips"><div class="chip">등원</div><div class="chip">하원</div><div class="chip on">태권도</div><div class="chip">수영</div><div class="chip">피아노</div><div class="chip">영어</div><div class="chip">미술</div><div class="chip">축구</div><div class="chip add">＋ 직접 입력</div></div></div>
+  <div><div class="label">요일</div>
+    <div class="chips"><div class="chip">평일</div><div class="chip">주말</div><div class="chip">매일</div><span style="width:14px"></span>
+      <div class="chip sm on">월</div><div class="chip sm">화</div><div class="chip sm on">수</div><div class="chip sm">목</div><div class="chip sm">금</div><div class="chip sm">토</div><div class="chip sm">일</div></div></div>
+  <div><div class="label">시각 — 시 한 번, 분 한 번</div>
+    <div class="grid"><div class="chip">7시</div><div class="chip">8시</div><div class="chip">9시</div><div class="chip">10시</div><div class="chip">11시</div><div class="chip">12시</div><div class="chip">13시</div><div class="chip">14시</div><div class="chip on">15시</div><div class="chip">16시</div><div class="chip">17시</div><div class="chip">18시</div><div class="chip">19시</div><div class="chip">20시</div><div class="chip">21시</div><div class="chip">22시</div></div>
+    <div class="mins"><div class="chip">:00</div><div class="chip">:10</div><div class="chip">:20</div><div class="chip">:30</div><div class="chip on">:40</div><div class="chip">:50</div></div></div>
+  <div><div class="label">준비물 <span class="tag">태권도에 자주 쓰는 것</span></div>
+    <div class="chips"><div class="chip on">도복</div><div class="chip on">띠</div><div class="chip">물통</div><div class="chip">수건</div><div class="chip add">＋ 직접 입력</div></div></div>
+  <div><div class="label">미리 알림</div><div class="chips"><div class="chip">10분 전</div><div class="chip on">15분 전</div><div class="chip">30분 전</div></div></div>
+  <div class="foot"><div class="btn p">저장</div></div>
+</div>
+
+<!-- 메모 -->
+<div class="screen">
+  <div class="hdr"><div class="t">새 메모</div><div class="back">취소</div></div>
+  <div class="summary"><b>콩이가 내릴 때마다</b><br>"<b>콩이 쪽 문 닫혔는지 확인</b>" 이라고 말해 드려요<span class="s">운전 중엔 음성으로만, 정차 중엔 화면에도</span></div>
+  <div><div class="label">언제</div>
+    <div class="trig"><div class="tc"><span class="ic">🚸</span>탈 때</div><div class="tc"><span class="ic">▶</span>출발할 때</div><div class="tc"><span class="ic">P</span>도착할 때</div><div class="tc on"><span class="ic">🚪</span>내릴 때</div><div class="tc"><span class="ic">⏰</span>정한 시각</div></div></div>
+  <div><div class="label">누구</div>
+    <div class="kid"><div class="k"><div class="dot">지</div>지우</div><div class="k on"><div class="dot">콩</div>콩이</div><div class="k">누구든</div></div></div>
+  <div><div class="label">무엇 <span class="tag">내릴 때 자주 쓰는 메모</span></div>
+    <div class="chips"><div class="chip on">문 닫혔는지 확인</div><div class="chip">가방 챙겼는지</div><div class="chip">우산</div><div class="chip">알림장 받기</div><div class="chip">물통</div><div class="chip add">＋ 직접 입력</div></div></div>
+  <div><div class="label">얼마나</div><div class="chips"><div class="chip">이번 한 번만</div><div class="chip on">매번</div></div></div>
+  <div style="flex:1"></div>
+  <div class="foot"><div class="btn p">저장</div></div>
+</div>
+
+<div class="note">
+  <b>함께 정리할 것</b><br>
+  · <b>준비물 입력을 한 곳으로</b>: 지금은 가족 설정(요일별 준비물)과 일정(준비물) 두 군데서 받는다 → 일정에서만 받고, 도착 때 그날 그 아이 일정의 준비물을 말한다. 가족 설정은 별칭·연령대·자리·피코만.<br>
+  · <b>초안 → 저장</b>: 지금은 "+ 추가"를 누르는 순간 "새 일정"이 저장된다 → 저장 버튼을 눌러야 목록에 들어가고, 취소하면 사라진다. 기존 항목은 목록에서 누르면 같은 화면으로 열린다.<br>
+  · <b>칩 목록은 아이 연령대·일정 제목에 따라</b> 바뀐다 (수영 → 수영 가방·수모, 유치원 → 실내화·낮잠 이불). 원하는 게 없을 때만 키보드.<br>
+  · 목록 화면은 "월·수 15:40 지우 태권도 · 도복, 띠"처럼 문장형 한 줄로.
+</div>
+</div>
+</body></html>

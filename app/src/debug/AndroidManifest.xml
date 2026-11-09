@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- 디버그 빌드 전용 QA 훅: adb에서 벨트 대체 입력 (DUMP 권한 = adb shell만 보낼 수 있음) -->
+        <receiver
+            android:name=".DemoBeltReceiver"
+            android:exported="true"
+            android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="com.pikodrive.DEMO_BELT" />
+                <action android:name="com.pikodrive.DEMO_STICKERS" />
+                <action android:name="com.pikodrive.DEMO_GUARDIAN" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+[host 52:25.468 +   314ms] gear Park
+[host 52:29.480 +  4326ms] passenger in
+[host 52:34.488 +  9334ms] gear Drive
+[host 52:40.947 + 15794ms] speed 0→40 in 6s
+[host 53:19.250 + 54097ms] speed 40→50 in 4s
+[host 53:24.413 + 59260ms] speed 50→22 in 2s
+[host 53:33.649 + 68495ms] speed 22→35 in 3s
+[host 54:01.652 + 96498ms] battery 18%
+[host 54:12.895 +107742ms] speed 35→22 in 3s
+[host 54:17.203 +112050ms] speed 22→0 in 4s
+[host 54:18.218 +113065ms] gear Reverse
+[host 54:20.385 +115231ms] speed 0→5 in 2s
+[host 54:23.553 +118400ms] speed 5→0 in 2s
+[host 54:23.562 +118409ms] gear Park
+[host 54:32.574 +127421ms] charge port open
+[host 54:39.583 +134430ms] state gear=Park speed=0

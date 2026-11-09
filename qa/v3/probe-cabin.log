@@ -1,0 +1,41 @@
+# v3 신호 프로브 (2026-10-26, Pleos Connect Emulator v2.1.0, probe 앱 PIKO_PROBE 로그)
+# 주입: Virtual Console HTTP (doors_locked, window_rr, ambient_brightness, window-lock area=)
+[+1768ms] rear: ROW_2_LEFT occupied current=false
+[+1769ms] rear: ROW_2_RIGHT occupied event=false
+[+1769ms] rear: ROW_2_LEFT occupied event=false
+[+1772ms] rear: ROW_2_LEFT belt current=false
+[+1774ms] rear: ROW_2_LEFT belt event=false
+[+1775ms] rear: ROW_2_RIGHT belt event=false
+[+1776ms] rear: ROW_2_RIGHT occupied current=false
+[+1776ms] rear: ROW_2_RIGHT occupied event=false
+[+1777ms] rear: ROW_2_RIGHT belt current=false
+[+1777ms] rear: ROW_2_RIGHT belt event=false
+[+1778ms] rear: door ROW_2_LEFT pos current=0
+[+1779ms] rear: door ROW_2_RIGHT pos event=0
+[+1779ms] rear: door ROW_2_LEFT pos event=0
+[+1780ms] rear: door ROW_2_RIGHT pos current=0
+[+1782ms] rear: door ROW_2_RIGHT pos event=0
+[+1788ms] cabin: doorlock caps CapabilityConfig(accessType=READ_WRITE) areas=[[HOOD], [ROW_1_LEFT, ROW_1_RIGHT, ROW_2_LEFT, ROW_2_RIGHT]]
+[+1790ms] cabin: ambient caps CapabilityConfig(accessType=READ_WRITE) areas=[[ROW_1_LEFT, ROW_1_RIGHT, ROW_2_LEFT, ROW_2_CENTER, ROW_2_RIGHT]]
+[+1792ms] cabin: tempcur caps CapabilityConfig(accessType=READ) areas=[[ROW_1_LEFT], [ROW_1_RIGHT], [ROW_1_LEFT, ROW_1_RIGHT, ROW_2_LEFT, ROW_2_CENTER, ROW_2_RIGHT]]
+[+1794ms] cabin: winlock caps CapabilityConfig(accessType=READ_WRITE) areas=[[ROW_1_LEFT, ROW_1_RIGHT, ROW_2_LEFT, ROW_2_RIGHT], [ROW_2_LEFT], [ROW_2_RIGHT]]
+[+1798ms] cabin: doorlock ALL4 event=true
+[+1798ms] cabin: doorlock ALL4 current=true
+[+1799ms] cabin: winlock ROW_2_LEFT event=false
+[+1799ms] cabin: winlock ROW_2_RIGHT event=false
+[+1800ms] cabin: winlock ROW_2_LEFT current=false
+[+1800ms] cabin: winpos ROW_2_LEFT event=4
+[+1800ms] cabin: winpos ROW_2_RIGHT event=10
+[+1800ms] cabin: winpos ROW_2_LEFT current=4
+[+1800ms] cabin: winlock ROW_2_RIGHT current=false
+[+1801ms] cabin: winlock ROW_2_RIGHT event=false
+[+1801ms] cabin: winpos ROW_2_RIGHT current=10
+[+1801ms] cabin: winpos ROW_2_RIGHT event=10
+[+1802ms] cabin: temp ROW_1_LEFT current=19.1
+[+1803ms] cabin: temp ROW_1_LEFT event=19.1
+[+1807ms] cabin: ambient ROW_1_LEFT current=30
+[+1813ms] cabin: temp ROW_2_LEFT current FAIL java.lang.Exception: java.lang.IllegalArgumentException: area ID: 0x10 not supported for property ID: HVAC_TEMPERATURE_CURRENT
+[+1816ms] cabin: temp ROW_2_LEFT listener FAIL java.lang.Exception: java.lang.IllegalArgumentException: area ID: 0x10 not supported for property ID: HVAC_TEMPERATURE_CURRENT
+[+1816ms] cabin: ambient ROW_1_LEFT event=30
+[+1816ms] cabin: temp ROW_1_LEFT event=19.1
+[+1818ms] cabin: ambient ROW_1_LEFT event=30

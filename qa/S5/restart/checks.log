@@ -1,0 +1,11 @@
+launch 19:46:37.3N
+check 1 19:46:40.437 touch_ui=ok
+check 2 19:46:42.798 touch_ui=ok
+check 3 19:46:45.189 touch_ui=ok
+check 4 19:46:47.556 touch_ui=ok
+check 5 19:46:49.919 touch_ui=ok
+check 6 19:46:52.265 touch_ui=ok
+check 7 19:46:54.649 touch_ui=ok
+check 8 19:46:56.999 touch_ui=ok
+leaks=0
+after_park: F6 report shown

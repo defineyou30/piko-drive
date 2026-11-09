@@ -1,0 +1,12 @@
+{"type": "departed", "at": 1793013824490, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}, {"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793013825035}
+{"type": "arrived", "at": 1793013857146, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}, {"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793013857695}
+{"type": "alighted", "at": 1793013872324, "children": [{"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793013872868}
+{"type": "left_behind", "at": 1793013877342, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}], "received": 1793013877885}
+{"type": "alighted", "at": 1793013888359, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}], "received": 1793013888902}
+{"type": "left_behind_cleared", "at": 1793013888360, "children": [], "received": 1793013888907}
+{"type": "departed", "at": 1793017168347, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}, {"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793017168888}
+{"type": "arrived", "at": 1793017201043, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}, {"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793017201575}
+{"type": "alighted", "at": 1793017216178, "children": [{"seat": "오른쪽 뒷좌석", "alias": "콩이"}], "received": 1793017216711}
+{"type": "left_behind", "at": 1793017221194, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}], "received": 1793017221719}
+{"type": "alighted", "at": 1793017232205, "children": [{"seat": "왼쪽 뒷좌석", "alias": "지우"}], "received": 1793017232731}
+{"type": "left_behind_cleared", "at": 1793017232207, "children": [], "received": 1793017232734}

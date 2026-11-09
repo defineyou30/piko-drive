@@ -1,0 +1,6 @@
+date: 2026-10-24 22:28:36 KST
+installed_apk_sha256: 175ae394ef622a7a3014294544ff68971e3906bcd93332b8deff1a8080021ca6
+versionCode=3 minSdk=28 targetSdk=34
+versionName=0.2.1
+checks: SPOKEN GREETING/COMFORT/STARTLE/ARRIVAL, mode REVERSING, event HardBrake, no speech during REVERSING, no crash
+verdict: PASS

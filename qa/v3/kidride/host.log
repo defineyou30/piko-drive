@@ -1,0 +1,51 @@
+[host 42:26.897 + 44232ms] gear Park
+[host 42:26.899 + 44234ms] seat driver in
+[host 42:26.901 + 44236ms] seat rear_left out
+[host 42:26.903 + 44238ms] seat rear_right out
+[host 42:26.904 + 44239ms] door rl closed
+[host 42:26.906 + 44241ms] door rr closed
+[host 42:26.908 + 44243ms] doors unlocked
+[host 42:26.910 + 44245ms] window rr 0%
+[host 42:26.911 + 44246ms] window rl 0%
+[host 42:26.967 + 44302ms] belt LEFT clear (simulated input)
+[host 42:27.016 + 44351ms] belt RIGHT clear (simulated input)
+[host 42:31.024 + 48359ms] door rr open
+[host 42:32.029 + 49364ms] seat rear_left in
+[host 42:33.031 + 50366ms] door rr closed
+[host 42:35.080 + 52415ms] belt LEFT on (simulated input)
+[host 42:38.085 + 55420ms] MARK self-belt
+[host 42:39.131 + 56467ms] door rr open
+[host 42:40.136 + 57471ms] seat rear_right in
+[host 42:40.200 + 57535ms] belt RIGHT off (simulated input)
+[host 42:41.206 + 58541ms] door rr closed
+[host 42:41.210 + 58545ms] window rr 50%
+[host 42:52.215 + 69550ms] MARK checklist
+[host 43:03.269 + 80604ms] gear Drive
+[host 43:04.272 + 81607ms] MARK depart-unbuckled
+[host 43:09.199 + 86534ms] belt RIGHT on (simulated input)
+[host 43:09.203 + 86538ms] window rr 0%
+[host 43:09.204 + 86539ms] doors locked
+[host 43:15.524 + 92859ms] speed 0→40 in 6s
+[host 43:23.558 +100893ms] belt LEFT off (simulated input)
+[host 43:25.564 +102899ms] MARK belt-release
+[host 43:30.491 +107826ms] belt LEFT on (simulated input)
+[host 43:42.838 +120173ms] speed 40→0 in 6s
+[host 43:42.850 +120185ms] gear Park
+[host 43:42.851 +120186ms] doors unlocked
+[host 43:48.851 +126186ms] MARK arrived
+[host 43:49.871 +127206ms] belt LEFT off (simulated input)
+[host 43:49.873 +127208ms] door rl open
+[host 43:52.876 +130211ms] MARK street-door
+[host 43:55.830 +133165ms] door rl closed
+[host 43:57.884 +135219ms] belt RIGHT off (simulated input)
+[host 43:57.886 +135221ms] door rr open
+[host 43:59.889 +137224ms] seat rear_right out
+[host 44:02.898 +140233ms] door rr closed
+[host 44:02.898 +140233ms] MARK curb-exit
+[host 44:05.931 +143266ms] seat driver out
+[host 44:08.933 +146268ms] MARK left-behind
+[host 44:17.899 +155234ms] seat rear_left out
+[host 44:19.906 +157241ms] seat driver in
+[host 44:22.908 +160243ms] MARK clear
+[host 44:23.922 +161257ms] belt LEFT clear (simulated input)
+[host 44:23.975 +161310ms] belt RIGHT clear (simulated input)

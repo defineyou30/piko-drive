@@ -1,0 +1,33 @@
+{
+ "a_input": {
+  "first-meet": 1.51,
+  "first-register": 9.8,
+  "family": 18.19,
+  "home-briefing": 45.08,
+  "voice-schedule": 60.16,
+  "voice-schedule-heard": 84.4,
+  "chips": 102.49,
+  "schedule-saved": 109.03,
+  "voice-memo": 125.36,
+  "voice-memo-heard": 144.45,
+  "memo-saved": 157.07,
+  "home-after": 163.43
+ },
+ "b_ride": {
+  "self-belt": 11.23,
+  "checklist": 24.34,
+  "depart-unbuckled": 25.35,
+  "belt-release": 46.11,
+  "arrived": 68.9,
+  "street-door": 71.96,
+  "curb-exit": 81.05,
+  "left-behind": 86.06,
+  "clear": 99.08,
+  "end": 101.19
+ },
+ "c_rear": {
+  "board": 3.02,
+  "belt": 8.14,
+  "drive": 19.44
+ }
+}

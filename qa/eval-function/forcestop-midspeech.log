@@ -1,0 +1,15 @@
+10-24 05:17:25.012 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-1](jobId=141) generate(com.pikodrive:ondevice)(ai.umos.airspeech.swig.TextToSpeech@26babd7) start speaker=seoyoon locale=ko_KR
+10-24 05:17:25.076 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-1](jobId=141) generate(com.pikodrive:ondevice) output - pcmSize=13312 isFinal=false, streamTextIsFinal:true
+10-24 05:17:25.081 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) writeAudioTrack(com.pikodrive:ondevice) - try write=26624, isFinal=false
+10-24 05:17:25.105 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-1](jobId=141) generate(com.pikodrive:ondevice) output - pcmSize=14336 isFinal=true, streamTextIsFinal:true
+10-24 05:17:25.106 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-1](jobId=141) generate(com.pikodrive:ondevice) complete
+10-24 05:17:25.529 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) writeAudioTrack(com.pikodrive:ondevice) - written=26624, isFinal=false
+10-24 05:17:25.529 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) writeAudioTrack(com.pikodrive:ondevice) - try write=28672, isFinal=true
+10-24 05:17:25.531 I/ActivityManager(  705): Force stopping com.pikodrive appid=10177 user=10: from pid 21318
+10-24 05:17:25.531 I/ActivityManager(  705): Killing 28742:com.pikodrive/u10a177 (adj 100): stop com.pikodrive due to from pid 21318
+10-24 05:17:25.602 V/ActivityManager(  705): Got obituary of 28742:com.pikodrive
+10-24 05:17:26.129 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) writeAudioTrack(com.pikodrive:ondevice) - written=28672, isFinal=true
+10-24 05:17:26.129 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) writeAudioTrack(com.pikodrive:ondevice) TotalWrittenBytes=55296, UnderRunCount: before=0, after=0, delta=0
+10-24 05:17:26.329 I/[GAAS]a ( 3425): [DefaultDispatcher-worker-3](jobId=141) audioTrackManager(com.pikodrive:ondevice) - done
+10-24 05:17:26.329 I/[GAAS]a ( 3425): [DefaultDispatcher-worker-3](jobId=141) onDeviceTtsPlayer(com.pikodrive:ondevice) - released
+10-24 05:17:26.329 I/[GAAS]OnDeviceStreamPlayerImpl( 3425): [DefaultDispatcher-worker-4](jobId=141) onDeviceTtsPlayer(com.pikodrive:ondevice) - complete

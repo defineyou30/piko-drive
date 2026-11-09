@@ -1,0 +1,33 @@
+== D2/D3 idle D 20s at 0km/h then P (expect: no Departed, no trip, no speech)
+mode DRIVING
+mode PARKED
+== D3 reverse-only maneuver (expect: no trip)
+mode REVERSING
+event Reversing(timestampMs=10252024)
+mode DRIVING
+mode PARKED
+== real short drive (expect: Departed after ~3s moving, trip report)
+mode DRIVING
+event Departed(timestampMs=10264900)
+speech SPOKEN GREETING greet_2 at=10266356
+mode PARKED
+event Parked(timestampMs=10273630)
+trip 8s comfort=8s startled=0 +px=0 stage=SPARK→SPARK
+speech SPOKEN ARRIVAL arrive_1 at=10275355
+== D1 background: open Settings app during drive, hard brake, park (expect HardBrake + trip at real time)
+Warning: Activity not started, its current task has been brought to the front
+isFrozen=false
+mode DRIVING
+event Departed(timestampMs=10281635)
+speech DROPPED_COOLDOWN GREETING greet_1 at=10281636
+mode PARKED
+mode DRIVING
+event HardBrake(timestampMs=10324057, kmhPerSec=-21.54398)
+mode REVERSING
+speech INTERRUPTED STARTLE startle_brake_1 at=10327501
+event Reversing(timestampMs=10327490)
+mode PARKED
+event Parked(timestampMs=10333600)
+trip 51s comfort=42s startled=1 +px=0 stage=SPARK→SPARK
+speech SPOKEN ARRIVAL arrive_2 at=10335011
+Warning: Activity not started, its current task has been brought to the front

@@ -1,0 +1,28 @@
+# 제출 APK (v0.3.0) — 2026-10-26
+
+파일: dist/PikoDrive_release.apk (제출 시 apk/<팀명>_피코드라이브_release.apk 로 복사, tools/package_submission.sh)
+SHA-256: e59a603a44a306a50cabab45b9249584b2dd4ac108a356f7bbc2de7fecf5abee
+크기: 48271252 bytes
+versionName 0.3.0 / versionCode 4 / minSdk 28 / targetSdk 34
+
+## 서명
+Verified using v2 scheme (APK Signature Scheme v2): true
+Number of signers: 1
+Signer #1 certificate DN: CN=Piko Drive, O=Piko, C=KR
+Signer #1 certificate SHA-256 digest: 49ae328b53ebfc05ca4cf3a9790636a0ab151c8ef1390d273787ca5a2c8870d5
+
+## 디버그 전용 시험 훅 미포함 확인
+- DemoBeltReceiver(adb로 벨트·스티커·보호자 알림을 바꾸는 QA 브로드캐스트): 0개 (0이어야 함)
+- debuggable: 0개 (0이어야 함) → run-as 불가 → 음성 QA 주입 파일 경로도 쓸 수 없음
+- 시연용 벨트 대체 입력은 데모 패널 화면으로만 (릴리스에도 있음, "시뮬레이션 입력" 배지)
+
+## 에뮬레이터 실행 확인 (qa/v5/release-run/)
+설치 APK = 위 해시. tools/v3_kidride.py 시나리오(adb 벨트 브로드캐스트는 릴리스에서 무시 → 벨트는 SDK 값=미체결)
+- speech SPOKEN AGENT agent_schedule at=21752082
+- speech SPOKEN AGENT agent_memo_board at=21780226
+- speech SPOKEN RIDE_ALERT front_depart_unbuckled at=21811065
+- speech INTERRUPTED AGENT agent_memo_arrive at=21853482
+- speech SPOKEN RIDE_ALERT front_street_door at=21857599
+- speech SPOKEN AGENT agent_memo_arrive at=21859963
+- speech SPOKEN RIDE_ALERT front_left_behind_1 at=21872493
+- speech INTERRUPTED RIDE_ALERT front_left_behind_2 at=21881632

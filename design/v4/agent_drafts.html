@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>Agent Drafts</title>
+<style>
+:root{--bg:#0b0c0e;--panel:#14161a;--line:#262a31;--fg:#f2efe9;--mute:#8d939c;--amber:#ffb547;--cyan:#7fd8ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Pretendard","Apple SD Gothic Neo",sans-serif;width:1920px;padding:48px}
+h1{font-size:30px;margin:0 0 6px;font-weight:700}
+.sub{color:var(--mute);font-size:17px;margin-bottom:36px}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:18px}
+.tag{font-size:15px;color:var(--amber);font-weight:700;letter-spacing:.04em}
+.name{font-size:26px;font-weight:700}
+.desc{color:var(--mute);font-size:15px;line-height:1.55;min-height:70px}
+.rear{height:330px;border-radius:16px;background:radial-gradient(120% 90% at 50% 20%,#1e2229 0%,#0e1013 70%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.rear .lbl,.front .lbl{position:absolute;top:12px;left:14px;font-size:12px;color:var(--mute);letter-spacing:.08em}
+.front{height:150px;border-radius:16px;background:#0f1114;border:1px solid var(--line);position:relative;display:flex;align-items:center;gap:18px;padding:0 22px}
+.front .msg{font-size:17px;line-height:1.45}
+.front .msg b{color:var(--fg)}
+.front .msg span{color:var(--mute);font-size:14px;display:block;margin-top:4px}
+.why{font-size:14px;color:var(--mute);line-height:1.5;border-top:1px solid var(--line);padding-top:14px}
+.why b{color:var(--fg)}
+</style></head><body>
+<h1>피코 v4 — 아이 스케줄·안전 에이전트 캐릭터 시안</h1>
+<div class="sub">위: 뒷좌석 화면(아이가 보는 큰 얼굴) · 아래: 운전석 화면(부모에게 브리핑하는 에이전트 칩)</div>
+<div class="row">
+
+<!-- A: 라이트 렌즈 -->
+<div class="card">
+  <div class="tag">A · LIGHT LENS</div>
+  <div class="name">렌즈 — 빛으로 말하는 에이전트</div>
+  <div class="desc">검은 유리 렌즈 안에 앰버 빛이 눈이 된다. 헤드램프·카메라 렌즈 같은 차량 부품의 질감. 귀엽기보다 "믿음직한" 쪽.</div>
+  <div class="rear"><div class="lbl">REAR · 아이</div>
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <defs>
+        <radialGradient id="aglass" cx="40%" cy="30%" r="75%"><stop offset="0" stop-color="#3a4250"/><stop offset=".55" stop-color="#14181e"/><stop offset="1" stop-color="#07080a"/></radialGradient>
+        <linearGradient id="aring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9e4dc"/><stop offset=".5" stop-color="#8a8f97"/><stop offset="1" stop-color="#d6d1c8"/></linearGradient>
+        <filter id="aglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+      </defs>
+      <ellipse cx="150" cy="282" rx="92" ry="10" fill="#000" opacity=".55"/>
+      <circle cx="150" cy="148" r="128" fill="url(#aring)"/>
+      <circle cx="150" cy="148" r="114" fill="url(#aglass)"/>
+      <g filter="url(#aglow)" opacity=".9"><rect x="94" y="120" width="34" height="46" rx="17" fill="#ffb547"/><rect x="172" y="120" width="34" height="46" rx="17" fill="#ffb547"/></g>
+      <rect x="96" y="122" width="30" height="42" rx="15" fill="#ffd38a"/><rect x="174" y="122" width="30" height="42" rx="15" fill="#ffd38a"/>
+      <path d="M128 196 q22 14 44 0" stroke="#ffb547" stroke-width="6" fill="none" stroke-linecap="round" opacity=".85"/>
+      <ellipse cx="112" cy="78" rx="46" ry="20" fill="#fff" opacity=".10" transform="rotate(-22 112 78)"/>
+    </svg>
+  </div>
+  <div class="front"><div class="lbl">FRONT · 부모</div>
+    <svg width="76" height="76" viewBox="0 0 300 300"><circle cx="150" cy="150" r="128" fill="url(#aring)"/><circle cx="150" cy="150" r="114" fill="url(#aglass)"/><rect x="96" y="124" width="30" height="42" rx="15" fill="#ffd38a"/><rect x="174" y="124" width="30" height="42" rx="15" fill="#ffd38a"/></svg>
+    <div class="msg"><b>15:40 지우 태권도 픽업</b> — 지금 출발하면 5분 여유<span>메모 · 도복 띠 챙기기</span></div>
+  </div>
+  <div class="why"><b>장점</b> 차량 부품 같아 고급스럽고 에이전트 신뢰감. <b>약점</b> 유치원생에겐 덜 귀여움 → 표정 폭으로 보완.</div>
+</div>
+
+<!-- B: 파라메트릭 픽셀 -->
+<div class="card">
+  <div class="tag">B · PIXEL VISOR</div>
+  <div class="name">바이저 — 차의 조명 언어로 된 얼굴</div>
+  <div class="desc">매끈한 캡슐 몸에 어두운 바이저, 그 안의 작은 빛 점들이 표정을 만든다. 현대차 전기차의 픽셀 램프 같은 디자인 언어와 같은 결.</div>
+  <div class="rear"><div class="lbl">REAR · 아이</div>
+    <svg width="320" height="300" viewBox="0 0 320 300">
+      <defs>
+        <linearGradient id="bbody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f1ec"/><stop offset=".7" stop-color="#d9d4cc"/><stop offset="1" stop-color="#b9b3aa"/></linearGradient>
+        <linearGradient id="bvisor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20252d"/><stop offset="1" stop-color="#0a0c0f"/></linearGradient>
+        <filter id="bglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5"/></filter>
+      </defs>
+      <ellipse cx="160" cy="284" rx="110" ry="10" fill="#000" opacity=".55"/>
+      <rect x="40" y="40" width="240" height="230" rx="96" fill="url(#bbody)"/>
+      <rect x="62" y="96" width="196" height="96" rx="48" fill="url(#bvisor)"/>
+      <g id="beyes">
+        <g filter="url(#bglow)" fill="#ffb547">
+          <rect x="104" y="124" width="10" height="10" rx="2"/><rect x="116" y="124" width="10" height="10" rx="2"/><rect x="104" y="136" width="10" height="10" rx="2"/><rect x="116" y="136" width="10" height="10" rx="2"/><rect x="104" y="148" width="10" height="10" rx="2"/><rect x="116" y="148" width="10" height="10" rx="2"/>
+          <rect x="194" y="124" width="10" height="10" rx="2"/><rect x="206" y="124" width="10" height="10" rx="2"/><rect x="194" y="136" width="10" height="10" rx="2"/><rect x="206" y="136" width="10" height="10" rx="2"/><rect x="194" y="148" width="10" height="10" rx="2"/><rect x="206" y="148" width="10" height="10" rx="2"/>
+        </g>
+        <g fill="#ffe1a8">
+          <rect x="105" y="125" width="8" height="8" rx="2"/><rect x="117" y="125" width="8" height="8" rx="2"/><rect x="105" y="137" width="8" height="8" rx="2"/><rect x="117" y="137" width="8" height="8" rx="2"/><rect x="105" y="149" width="8" height="8" rx="2"/><rect x="117" y="149" width="8" height="8" rx="2"/>
+          <rect x="195" y="125" width="8" height="8" rx="2"/><rect x="207" y="125" width="8" height="8" rx="2"/><rect x="195" y="137" width="8" height="8" rx="2"/><rect x="207" y="137" width="8" height="8" rx="2"/><rect x="195" y="149" width="8" height="8" rx="2"/><rect x="207" y="149" width="8" height="8" rx="2"/>
+        </g>
+      </g>
+      <g fill="#ffb547" opacity=".35"><rect x="150" y="170" width="8" height="8" rx="2"/><rect x="162" y="170" width="8" height="8" rx="2"/></g>
+      <rect x="84" y="210" width="16" height="10" rx="5" fill="#ef8a72" opacity=".75"/><rect x="220" y="210" width="16" height="10" rx="5" fill="#ef8a72" opacity=".75"/>
+      <ellipse cx="110" cy="70" rx="44" ry="13" fill="#fff" opacity=".55"/>
+    </svg>
+  </div>
+  <div class="front"><div class="lbl">FRONT · 부모</div>
+    <svg width="80" height="76" viewBox="0 0 320 300"><rect x="40" y="40" width="240" height="230" rx="96" fill="url(#bbody)"/><rect x="62" y="96" width="196" height="96" rx="48" fill="url(#bvisor)"/><g fill="#ffe1a8"><rect x="104" y="124" width="22" height="34" rx="4"/><rect x="194" y="124" width="22" height="34" rx="4"/></g></svg>
+    <div class="msg"><b>콩이 오른쪽 벨트 미체결</b> — 출발 전에 확인해 주세요<span>오늘 일정 3개 · 다음 16:30 수영</span></div>
+  </div>
+  <div class="why"><b>장점</b> 현대차 디자인 언어와 연결돼 "Pleos용"으로 설득력. 픽셀 눈으로 표정 표현 폭이 큼. <b>약점</b> 로봇 느낌으로 기울 수 있음.</div>
+</div>
+
+<!-- C: 코파일럿 -->
+<div class="card">
+  <div class="tag">C · CO-PILOT</div>
+  <div class="name">부기장 — 아이 담당 크루</div>
+  <div class="desc">헤드셋을 쓴 둥근 크루. 부모에겐 "부기장이 브리핑합니다", 아이에겐 같이 비행하는 친구. 역할(스케줄·안전 담당)이 외형으로 바로 읽힌다.</div>
+  <div class="rear"><div class="lbl">REAR · 아이</div>
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <defs>
+        <radialGradient id="cbody" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#fbf8f3"/><stop offset=".7" stop-color="#e4ddd2"/><stop offset="1" stop-color="#c5bdb1"/></radialGradient>
+        <linearGradient id="cset" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d333c"/><stop offset="1" stop-color="#15181d"/></linearGradient>
+      </defs>
+      <ellipse cx="150" cy="284" rx="96" ry="10" fill="#000" opacity=".55"/>
+      <path d="M44 150 a106 106 0 0 1 212 0" stroke="url(#cset)" stroke-width="18" fill="none" stroke-linecap="round"/>
+      <circle cx="150" cy="160" r="112" fill="url(#cbody)"/>
+      <rect x="22" y="128" width="40" height="70" rx="20" fill="url(#cset)"/><rect x="238" y="128" width="40" height="70" rx="20" fill="url(#cset)"/>
+      <circle cx="258" cy="163" r="7" fill="#ffb547"/>
+      <path d="M248 196 q-20 46 -62 52" stroke="#2d333c" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="182" cy="248" r="9" fill="#2d333c"/>
+      <ellipse cx="114" cy="150" rx="17" ry="23" fill="#1a1714"/><ellipse cx="186" cy="150" rx="17" ry="23" fill="#1a1714"/>
+      <circle cx="108" cy="142" r="6" fill="#fff"/><circle cx="180" cy="142" r="6" fill="#fff"/>
+      <ellipse cx="86" cy="190" rx="15" ry="8" fill="#ef8a72" opacity=".7"/><ellipse cx="214" cy="190" rx="15" ry="8" fill="#ef8a72" opacity=".7"/>
+      <path d="M136 192 q14 12 28 0" stroke="#1a1714" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <rect x="118" y="80" width="64" height="14" rx="7" fill="#ffb547" opacity=".9"/>
+    </svg>
+  </div>
+  <div class="front"><div class="lbl">FRONT · 부모</div>
+    <svg width="76" height="76" viewBox="0 0 300 300"><path d="M44 150 a106 106 0 0 1 212 0" stroke="url(#cset)" stroke-width="18" fill="none"/><circle cx="150" cy="160" r="112" fill="url(#cbody)"/><rect x="22" y="128" width="40" height="70" rx="20" fill="url(#cset)"/><rect x="238" y="128" width="40" height="70" rx="20" fill="url(#cset)"/><ellipse cx="114" cy="150" rx="17" ry="23" fill="#1a1714"/><ellipse cx="186" cy="150" rx="17" ry="23" fill="#1a1714"/></svg>
+    <div class="msg"><b>메모 알림</b> — "아기 쪽 문 닫힘 확인" 하차 때 다시 알려드릴게요<span>오늘 안전 기록 · 벨트 풀림 1회</span></div>
+  </div>
+  <div class="why"><b>장점</b> 역할이 한눈에 보이고 아이 친화. 앞/뒤 어디서든 같은 인물. <b>약점</b> 헤드셋은 흔한 모티프 → 디테일로 차별화 필요.</div>
+</div>
+</div>
+</body></html>

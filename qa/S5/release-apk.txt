@@ -1,0 +1,21 @@
+file: dist/PikoDrive_release.apk
+sha256: 85623d0c6369804dd823bf428dff42922912b4844a72908960033d4222ef1e04
+git: 14eafcff6ba99efe86ec86db82083899329ed2f5
+
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Piko Drive, O=Piko, C=KR
+Signer #1 certificate SHA-256 digest: 49ae328b53ebfc05ca4cf3a9790636a0ab151c8ef1390d273787ca5a2c8870d5
+Signer #1 certificate SHA-1 digest: 459179b4fe50cb81420460bcab00e7cac8f9d45d
+Signer #1 certificate MD5 digest: 7d8fbf42a93fed314b58af3b10c34240
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 3aa99ecffc17398546c5525466cf3472e967c0abfe283c54b04e1d285e3421f0
+Signer #1 public key SHA-1 digest: 2af07e48299e320dfa6746c8aea8797b4b0b20bb
+Signer #1 public key MD5 digest: 73155dacda259a125e90a14ff05c0bc2

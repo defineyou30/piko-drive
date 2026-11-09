@@ -1,0 +1,22 @@
+10-24 05:01:00.228 I/PIKO_EVIDENCE(16999): mode DRIVING
+10-24 05:01:00.228 I/PIKO_EVIDENCE(16999): event Departed(timestampMs=8748764)
+10-24 05:01:00.228 I/PIKO_EVIDENCE(16999): speech DROPPED_COOLDOWN GREETING greet_2 at=8748764
+10-24 05:01:54.868 I/PIKO_EVIDENCE(16999): mode PARKED
+10-24 05:01:57.965 I/PIKO_EVIDENCE(16999): event Parked(timestampMs=8806501)
+10-24 05:01:57.966 I/PIKO_EVIDENCE(16999): trip 57s comfort=9s startled=0 +px=0 stage=SPARK→SPARK
+10-24 05:01:59.370 I/PIKO_EVIDENCE(16999): speech SPOKEN ARRIVAL arrive_2 at=8807906
+10-24 05:02:21.733 I/PIKO_EVIDENCE(16999): mode DRIVING
+10-24 05:02:21.733 I/PIKO_EVIDENCE(16999): event Departed(timestampMs=8830268)
+10-24 05:02:23.069 I/PIKO_EVIDENCE(16999): speech SPOKEN GREETING greet_1 at=8831605
+10-24 05:03:19.933 I/PIKO_EVIDENCE(16999): mode PARKED
+10-24 05:03:22.965 I/PIKO_EVIDENCE(16999): event Parked(timestampMs=8891500)
+10-24 05:03:22.965 I/PIKO_EVIDENCE(16999): growth SPARK px=2
+10-24 05:03:22.965 I/PIKO_EVIDENCE(16999): trip 61s comfort=17s startled=0 +px=1 stage=SPARK→SPARK
+10-24 05:03:24.653 I/PIKO_EVIDENCE(16999): speech SPOKEN ARRIVAL arrive_1 at=8893189
+10-24 05:03:47.430 I/PIKO_EVIDENCE(16999): mode DRIVING
+10-24 05:03:47.430 I/PIKO_EVIDENCE(16999): event Departed(timestampMs=8915966)
+10-24 05:03:47.430 I/PIKO_EVIDENCE(16999): speech DROPPED_VOICE_OFF GREETING greet_2 at=8915966
+10-24 05:03:56.464 I/PIKO_EVIDENCE(16999): event HardBrake(timestampMs=8925000, kmhPerSec=-21.317831)
+10-24 05:03:58.965 I/PIKO_EVIDENCE(16999): speech DROPPED_VOICE_OFF STARTLE startle_brake_3 at=8927501
+# host: 05:01:00 Drive, 05:01:14.9 Park (app in background: Car Settings foreground) -> app mode PARKED only at 05:01:54.8 when app reopened; trip 57s (real ~15s)
+# host: 05:02:21 Drive 50km/h -> Settings foreground; 25s later dumpsys: isFrozen=true; 05:02:52 brake 50->15 in 1.5s (-23km/h/s) + Park -> no HardBrake, no speech; reopen 05:03:20 -> trip 61s startled=0

@@ -1,0 +1,116 @@
+--------- beginning of main
+10-26 00:45:19.876 I/PIKO_EVIDENCE(30240): session demo=false
+10-26 00:45:19.877 I/PIKO_EVIDENCE(30240): session start caps=VehicleCapabilities(speed=true, gear=true, uxRestriction=true, battery=true, passenger=true) source=pleos
+10-26 00:45:19.877 I/PIKO_EVIDENCE(30240): mode BOOTING
+10-26 00:45:19.878 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:45:19.878 I/PIKO_EVIDENCE(30240): growth SPARK px=1
+10-26 00:45:19.878 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=
+10-26 00:45:20.143 I/PIKO_EVIDENCE(30240): gear source = Pleos Vehicle SDK
+10-26 00:45:20.789 I/PIKO_EVIDENCE(30240): passenger source = Pleos Vehicle SDK (inverted mapping)
+10-26 00:45:21.207 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:UNKNOWN, door_lock:UNKNOWN, rear_windows:UNKNOWN
+10-26 00:45:21.397 I/PIKO_EVIDENCE(30240): mode PARKED
+10-26 00:45:21.493 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:UNKNOWN, rear_windows:UNKNOWN
+10-26 00:45:21.493 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:UNKNOWN, rear_windows:OK
+10-26 00:45:21.501 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:45:21.517 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:45:23.757 I/PIKO_EVIDENCE(30240): speech SPOKEN GREETING hello_1 at=5107311
+10-26 00:45:31.505 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:45:51.340 I/PIKO_EVIDENCE(30240): speech SPOKEN AGENT agent_schedule at=5134894
+10-26 00:45:52.496 I/PIKO_EVIDENCE(30240): demo guardian=true
+10-26 00:46:10.176 I/PIKO_EVIDENCE(30240): demo belt LEFT=null (simulated input)
+10-26 00:46:10.221 I/PIKO_EVIDENCE(30240): demo belt RIGHT=null (simulated input)
+10-26 00:46:14.232 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:ATTENTION, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:15.238 I/PIKO_EVIDENCE(30240): ride ChildBoarded(timestampMs=5158792, seat=LEFT)
+10-26 00:46:15.239 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:46:15.239 I/PIKO_EVIDENCE(30240): ridestate BOARDING lb=NONE onboard=[LEFT] check=belt_LEFT:ATTENTION, rear_doors:ATTENTION, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:16.247 I/PIKO_EVIDENCE(30240): ridestate BOARDING lb=NONE onboard=[LEFT] check=belt_LEFT:ATTENTION, rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:17.555 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_board_school at=5161109
+10-26 00:46:18.291 I/PIKO_EVIDENCE(30240): ride BeltBuckled(timestampMs=5161844, seat=LEFT, self=true)
+10-26 00:46:18.291 I/PIKO_EVIDENCE(30240): ride StickerEarned(timestampMs=5161844, seat=LEFT, reason=SELF_BELT)
+10-26 00:46:18.291 I/PIKO_EVIDENCE(30240): ridestate READY lb=NONE onboard=[LEFT] check=belt_LEFT:OK, rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:18.291 I/PIKO_EVIDENCE(30240): demo belt LEFT=true (simulated input)
+10-26 00:46:20.031 I/PIKO_EVIDENCE(30240): speech SPOKEN AGENT agent_memo_board at=5163585
+10-26 00:46:22.319 I/PIKO_EVIDENCE(30240): ridestate READY lb=NONE onboard=[LEFT] check=belt_LEFT:OK, rear_doors:ATTENTION, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:23.064 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_belt_self_school at=5166618
+10-26 00:46:23.321 I/PIKO_EVIDENCE(30240): ride ChildBoarded(timestampMs=5166874, seat=RIGHT)
+10-26 00:46:23.321 I/PIKO_EVIDENCE(30240): ridestate BOARDING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:ATTENTION, rear_doors:ATTENTION, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:23.403 I/PIKO_EVIDENCE(30240): demo belt RIGHT=false (simulated input)
+10-26 00:46:24.423 I/PIKO_EVIDENCE(30240): ridestate BOARDING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:ATTENTION, rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:24.426 I/PIKO_EVIDENCE(30240): ridestate BOARDING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:ATTENTION, rear_doors:OK, door_lock:ATTENTION, rear_windows:ATTENTION
+10-26 00:46:25.240 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:46:25.722 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_board_kinder at=5169276
+10-26 00:46:31.388 I/PIKO_EVIDENCE(30240): ride BeltPrompt(timestampMs=5174941, seat=RIGHT)
+10-26 00:46:31.388 I/PIKO_EVIDENCE(30240): expression SLEEPY
+10-26 00:46:34.164 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_belt_prompt_kinder at=5177718
+10-26 00:46:38.107 I/PIKO_EVIDENCE(30240): ambient dim 30→15
+10-26 00:46:41.389 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:46:43.188 I/PIKO_EVIDENCE(30240): ambient restore →30
+10-26 00:46:46.353 I/PIKO_EVIDENCE(30240): mode DRIVING
+10-26 00:46:46.354 I/PIKO_EVIDENCE(30240): ride DepartUnbuckled(timestampMs=5189907, seats=[RIGHT])
+10-26 00:46:46.356 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:ATTENTION, rear_doors:OK, door_lock:ATTENTION, rear_windows:ATTENTION
+10-26 00:46:49.636 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_ALERT front_depart_unbuckled at=5193190
+10-26 00:46:52.324 I/PIKO_EVIDENCE(30240): ride BeltBuckled(timestampMs=5195877, seat=RIGHT, self=false)
+10-26 00:46:52.324 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:46:52.324 I/PIKO_EVIDENCE(30240): speech DROPPED_COOLDOWN RIDE_KID kid_belt_done_kinder at=5195878
+10-26 00:46:52.324 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:OK, rear_doors:OK, door_lock:ATTENTION, rear_windows:ATTENTION
+10-26 00:46:52.324 I/PIKO_EVIDENCE(30240): demo belt RIGHT=true (simulated input)
+10-26 00:46:52.331 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:OK, rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:46:52.332 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:OK, rear_doors:OK, door_lock:OK, rear_windows:OK
+10-26 00:46:52.979 I/PIKO_EVIDENCE(30240): ride DepartedWithKids(timestampMs=5196532, seats=[LEFT, RIGHT])
+10-26 00:46:52.991 I/PIKO_EVIDENCE(30240): guardian departed attempt=1 code=200
+10-26 00:46:56.047 I/PIKO_EVIDENCE(30240): event Departed(timestampMs=5199600)
+10-26 00:47:02.326 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:47:06.863 I/PIKO_EVIDENCE(30240): ride BeltReleasedWhileDriving(timestampMs=5210416, seat=LEFT, reminder=false)
+10-26 00:47:06.865 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:ATTENTION, belt_RIGHT:OK, rear_doors:OK, door_lock:OK, rear_windows:OK
+10-26 00:47:06.865 I/PIKO_EVIDENCE(30240): demo belt LEFT=false (simulated input)
+10-26 00:47:09.324 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_ALERT front_belt_released at=5212877
+10-26 00:47:13.870 I/PIKO_EVIDENCE(30240): ride BeltBuckled(timestampMs=5217423, seat=LEFT, self=false)
+10-26 00:47:13.871 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:47:13.871 I/PIKO_EVIDENCE(30240): speech DROPPED_COOLDOWN RIDE_KID kid_belt_done_school at=5217424
+10-26 00:47:13.871 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:OK, rear_doors:OK, door_lock:OK, rear_windows:OK
+10-26 00:47:13.871 I/PIKO_EVIDENCE(30240): demo belt LEFT=true (simulated input)
+10-26 00:47:23.871 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:47:26.472 I/PIKO_EVIDENCE(30240): ridestate DRIVING lb=NONE onboard=[LEFT, RIGHT] check=belt_LEFT:OK, belt_RIGHT:OK, rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:47:26.477 I/PIKO_EVIDENCE(30240): mode PARKED
+10-26 00:47:26.477 I/PIKO_EVIDENCE(30240): ride Arrived(timestampMs=5230030, seats=[LEFT, RIGHT], items={LEFT=[도복, 띠], RIGHT=[수영 가방]})
+10-26 00:47:26.477 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:47:26.478 I/PIKO_EVIDENCE(30240): ridestate ARRIVED lb=NONE onboard=[LEFT, RIGHT] check=rear_doors:OK, rear_windows:OK
+10-26 00:47:26.624 I/PIKO_EVIDENCE(30240): guardian arrived attempt=1 code=200
+10-26 00:47:28.849 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_arrive_items_school at=5232403
+10-26 00:47:29.486 I/PIKO_EVIDENCE(30240): event Parked(timestampMs=5233039)
+10-26 00:47:29.487 I/PIKO_EVIDENCE(30240): trip 33s comfort=32s startled=0 +px=0 stage=SPARK→SPARK
+10-26 00:47:31.169 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_arrive_items_kinder at=5234723
+10-26 00:47:33.484 I/PIKO_EVIDENCE(30240): demo belt LEFT=false (simulated input)
+10-26 00:47:33.507 I/PIKO_EVIDENCE(30240): ride StreetSideDoorOpened(timestampMs=5237057, seat=LEFT)
+10-26 00:47:33.507 I/PIKO_EVIDENCE(30240): expression SURPRISED
+10-26 00:47:33.508 I/PIKO_EVIDENCE(30240): speech INTERRUPTED AGENT agent_memo_arrive at=5237062
+10-26 00:47:33.508 I/PIKO_EVIDENCE(30240): ridestate ARRIVED lb=NONE onboard=[LEFT, RIGHT] check=rear_doors:ATTENTION, rear_windows:OK
+10-26 00:47:37.628 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_ALERT front_street_door at=5241182
+10-26 00:47:39.524 I/PIKO_EVIDENCE(30240): ridestate ARRIVED lb=NONE onboard=[LEFT, RIGHT] check=rear_doors:OK, rear_windows:OK
+10-26 00:47:41.567 I/PIKO_EVIDENCE(30240): demo belt RIGHT=false (simulated input)
+10-26 00:47:41.579 I/PIKO_EVIDENCE(30240): ridestate ARRIVED lb=NONE onboard=[LEFT, RIGHT] check=rear_doors:ATTENTION, rear_windows:OK
+10-26 00:47:43.508 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:47:43.582 I/PIKO_EVIDENCE(30240): ride ChildAlighted(timestampMs=5247136, seat=RIGHT, viaCurb=true)
+10-26 00:47:43.584 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:47:43.584 I/PIKO_EVIDENCE(30240): ride StickerEarned(timestampMs=5247136, seat=RIGHT, reason=CURB_EXIT)
+10-26 00:47:43.610 I/PIKO_EVIDENCE(30240): guardian alighted attempt=1 code=200
+10-26 00:47:46.429 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_KID kid_bye_curb_kinder at=5249983
+10-26 00:47:46.595 I/PIKO_EVIDENCE(30240): ridestate ARRIVED lb=NONE onboard=[LEFT] check=rear_doors:OK, rear_windows:OK
+10-26 00:47:49.316 I/PIKO_EVIDENCE(30240): speech SPOKEN AGENT agent_memo_alight at=5252870
+10-26 00:47:49.642 I/PIKO_EVIDENCE(30240): ride LeftBehindAlert(timestampMs=5253195, seats=[LEFT], level=1)
+10-26 00:47:49.645 I/PIKO_EVIDENCE(30240): expression SURPRISED
+10-26 00:47:49.646 I/PIKO_EVIDENCE(30240): ridestate LEFT_BEHIND lb=ALERT onboard=[LEFT] check=rear_doors:OK, rear_windows:OK
+10-26 00:47:49.652 I/PIKO_EVIDENCE(30240): guardian left_behind attempt=1 code=200
+10-26 00:47:52.529 I/PIKO_EVIDENCE(30240): speech SPOKEN RIDE_ALERT front_left_behind_1 at=5256083
+10-26 00:47:59.646 I/PIKO_EVIDENCE(30240): expression CALM
+10-26 00:47:59.748 I/PIKO_EVIDENCE(30240): ride LeftBehindAlert(timestampMs=5263300, seats=[LEFT], level=2)
+10-26 00:47:59.748 I/PIKO_EVIDENCE(30240): expression SURPRISED
+10-26 00:48:01.616 I/PIKO_EVIDENCE(30240): ride ChildAlighted(timestampMs=5265169, seat=LEFT, viaCurb=false)
+10-26 00:48:01.616 I/PIKO_EVIDENCE(30240): expression HAPPY
+10-26 00:48:01.617 I/PIKO_EVIDENCE(30240): ride LeftBehindCleared(timestampMs=5265169)
+10-26 00:48:01.619 I/PIKO_EVIDENCE(30240): speech INTERRUPTED RIDE_ALERT front_left_behind_2 at=5265173
+10-26 00:48:01.619 I/PIKO_EVIDENCE(30240): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:48:01.624 I/PIKO_EVIDENCE(30240): guardian alighted attempt=1 code=200
+10-26 00:48:01.627 I/PIKO_EVIDENCE(30240): guardian left_behind_cleared attempt=1 code=200
+10-26 00:48:07.644 I/PIKO_EVIDENCE(30240): demo belt LEFT=null (simulated input)
+10-26 00:48:07.692 I/PIKO_EVIDENCE(30240): demo belt RIGHT=null (simulated input)

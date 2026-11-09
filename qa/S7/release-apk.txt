@@ -1,0 +1,5 @@
+file: dist/PikoDrive_release.apk (v0.2.1, versionCode 3)
+sha256: 175ae394ef622a7a3014294544ff68971e3906bcd93332b8deff1a8080021ca6
+git: 51ef090 + S7 r2 fixes (초기화 후 첫 만남 인사 재허용)
+demo90: qa/S7/release-demo90/verdict.log PASS (같은 해시 설치본)
+reset: 릴리스 빌드에서 F9 초기화 → SPOKEN GREETING hello_1 확인

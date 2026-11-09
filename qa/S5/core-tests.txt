@@ -1,0 +1,56 @@
+command: ./gradlew :core:test --rerun-tasks   (2026-10-24 19:47)
+  DrivingEventDetectorTest > booting holds until a valid gear arrives() PASSED
+  DrivingEventDetectorTest > hard brake right after a new trip starts is not swallowed by previous refractory() PASSED
+  DrivingEventDetectorTest > ux supported but not yet received stays BOOTING() PASSED
+  DrivingEventDetectorTest > out of order samples are ignored() PASSED
+  DrivingEventDetectorTest > brake right after a gap needs a fresh window() PASSED
+  DrivingEventDetectorTest > reversing emits Reversing and never hard events() PASSED
+  DrivingEventDetectorTest > sustained hard brake is detected once() PASSED
+  DrivingEventDetectorTest > long drive fires per step() PASSED
+  DrivingEventDetectorTest > smooth streak accumulates and resets after a hard brake() PASSED
+  DrivingEventDetectorTest > ux restricted park is not PARKED until restriction lifts() PASSED
+  DrivingEventDetectorTest > sample gap does not create a brake across the gap() PASSED
+  DrivingEventDetectorTest > hard accel is detected() PASSED
+  DrivingEventDetectorTest > booting straight into drive starts a trip() PASSED
+  DrivingEventDetectorTest > gear unsupported falls back to speed - zero held 5s means parked() PASSED
+  DrivingEventDetectorTest > refractory resets between trips less than 5s apart() PASSED
+  DrivingEventDetectorTest > depart and park transitions with park confirmation() PASSED
+  DrivingEventDetectorTest > single noisy sample spike is not detected (false-positive guard)() PASSED
+  DrivingEventDetectorTest > final D segment before P or R is accrued but reverse time is not() PASSED
+  DrivingEventDetectorTest > gentle brake is not a hard brake() PASSED
+  PetEngineTest > expression rate limit does not apply while parked() PASSED
+  PetEngineTest > parked speech does not consume driving budget() PASSED
+  PetEngineTest > speech in progress is stopped when entering reverse() PASSED
+  PetEngineTest > trip report contains duration, comfort, startled moments and pixels gained() PASSED
+  PetEngineTest > expression changes at most once per 10s while driving() PASSED
+  PetEngineTest > reversing means no speech and no expression change() PASSED
+  PetEngineTest > growth commits on park and unlocks stage() PASSED
+  PetEngineTest > reaction pending when shifting to reverse is dropped() PASSED
+  PetEngineTest > voice disabled never speaks and rests on QUIET() PASSED
+  PetEngineTest > no cooldown while parked() PASSED
+  PetEngineTest > global speech budget spans categories - 30s gap and 12 per hour() PASSED
+  PetEngineTest > growth curve hits every stage target at unlock() PASSED
+  PetEngineTest > demo multiplier accelerates growth() PASSED
+  PetEngineTest > parked speech is stopped when pulling away and when booting() PASSED
+  PetEngineTest > pending retry is cancelled when mode switched to reverse() PASSED
+  PetEngineTest > audio focus failure retries once then succeeds() PASSED
+  PetEngineTest > hard brake reaction is delayed 2_5s then surprised + startle line() PASSED
+  PetEngineTest > delayed reaction is dropped after D to R to D within the delay() PASSED
+  PetEngineTest > same category cooldown is 2 minutes while driving, other categories pass() PASSED
+  PetEngineTest > startle skips the 30s min gap but still counts toward hourly cap() PASSED
+  PetEngineTest > audio focus failure twice is dropped within 10s() PASSED
+  PetEngineTest > booting is silent() PASSED
+  PikoSessionTest > restricted park at boot keeps BOOTING and blocks petting() PASSED
+  PikoSessionTest > start is idempotent and stop halts collection() PASSED
+  PikoSessionTest > restored state survives a new session() PASSED
+  PikoSessionTest > commuteCompressed demo end to end() PASSED
+  ReactionPolicyTest > startle lines rotate and match event kind() PASSED
+  ReactionPolicyTest > lines never blame the driver() PASSED
+  ReactionPolicyTest > lines are short enough for about 3 seconds of TTS() PASSED
+  SimulatedVehicleGatewayTest > gaps and spikes are reproduced() PASSED
+  SimulatedVehicleGatewayTest > plays at 10Hz on virtual time with linear interpolation() PASSED
+  SimulatedVehicleGatewayTest > unsupported capabilities are masked like a real car() PASSED
+  SimulatedVehicleGatewayTest > commuteCompressed is about 90 seconds and ends parked() PASSED
+  InMemoryPetRepositoryTest > saves state and keeps bounded recent reports newest first() PASSED
+passed: 53  failed: 0
+BUILD SUCCESSFUL in 1s

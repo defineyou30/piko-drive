@@ -1,0 +1,13 @@
+[host 33:03.555 +   313ms] gear Park
+[host 33:08.562 +  5320ms] gear Drive
+[host 33:18.173 + 14932ms] speed 0→40 in 8s
+[host 33:34.618 + 31376ms] speed 40→45 in 6s
+[host 33:41.065 + 37823ms] speed 45→40 in 6s
+[host 34:01.532 + 58290ms] speed 40→50 in 6s
+[host 34:13.701 + 70459ms] speed 50→25 in 2s
+[host 34:20.070 + 76828ms] speed 25→0 in 5s
+[host 34:21.081 + 77839ms] gear Reverse
+[host 34:23.237 + 79995ms] speed 0→5 in 2s
+[host 34:27.412 + 84170ms] speed 5→0 in 2s
+[host 34:27.416 + 84174ms] gear Park
+[host 34:36.422 + 93181ms] state gear=Park speed=0

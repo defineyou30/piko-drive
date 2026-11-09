@@ -1,0 +1,17 @@
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.cxx/
+*.keystore
+*.jks
+dist/
+qa/video/showcase.mp4
+# v4 시연 원본 녹화 (용량 큼, 합성본은 submission/video/)
+qa/video4/*.mp4
+qa/video4/*.webm
+apk/

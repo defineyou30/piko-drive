@@ -1,0 +1,22 @@
+--------- beginning of main
+10-26 00:48:21.519 I/PIKO_EVIDENCE( 5206): session demo=false
+10-26 00:48:21.520 I/PIKO_EVIDENCE( 5206): session start caps=VehicleCapabilities(speed=true, gear=true, uxRestriction=true, battery=true, passenger=true) source=pleos
+10-26 00:48:21.520 I/PIKO_EVIDENCE( 5206): mode BOOTING
+10-26 00:48:21.521 I/PIKO_EVIDENCE( 5206): expression CALM
+10-26 00:48:21.521 I/PIKO_EVIDENCE( 5206): growth SPARK px=1
+10-26 00:48:21.521 I/PIKO_EVIDENCE( 5206): ridestate IDLE lb=NONE onboard=[] check=
+10-26 00:48:21.787 I/PIKO_EVIDENCE( 5206): gear source = Pleos Vehicle SDK
+10-26 00:48:22.358 I/PIKO_EVIDENCE( 5206): passenger source = Pleos Vehicle SDK (inverted mapping)
+10-26 00:48:22.820 I/PIKO_EVIDENCE( 5206): ridestate IDLE lb=NONE onboard=[] check=rear_doors:UNKNOWN, door_lock:UNKNOWN, rear_windows:UNKNOWN
+10-26 00:48:22.967 I/PIKO_EVIDENCE( 5206): mode PARKED
+10-26 00:48:22.980 I/PIKO_EVIDENCE( 5206): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:UNKNOWN, rear_windows:UNKNOWN
+10-26 00:48:22.981 I/PIKO_EVIDENCE( 5206): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:UNKNOWN, rear_windows:OK
+10-26 00:48:23.089 I/PIKO_EVIDENCE( 5206): expression HAPPY
+10-26 00:48:23.107 I/PIKO_EVIDENCE( 5206): ridestate IDLE lb=NONE onboard=[] check=rear_doors:OK, door_lock:ATTENTION, rear_windows:OK
+10-26 00:48:25.089 I/PIKO_EVIDENCE( 5206): speech SPOKEN GREETING hello_1 at=5288643
+10-26 00:48:33.089 I/PIKO_EVIDENCE( 5206): expression CALM
+10-26 00:48:48.818 I/PIKO_EVIDENCE( 5206): speech SPOKEN AGENT agent_schedule at=5312372
+10-26 00:48:57.392 I/PIKO_EVIDENCE( 5206): voice inject 96114 bytes (QA)
+10-26 00:49:00.071 I/PIKO_EVIDENCE( 5206): voice heard len=14
+10-26 00:49:54.240 I/PIKO_EVIDENCE( 5206): voice inject 118988 bytes (QA)
+10-26 00:49:57.398 I/PIKO_EVIDENCE( 5206): voice heard len=20
